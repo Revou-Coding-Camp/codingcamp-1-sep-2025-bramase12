@@ -48,6 +48,12 @@ addButton.addEventListener("click", () => {
     if (task === "" || dueDate === "") {
         alert("Silakan isi task dan tanggal.");
         return;
+    } else if (task === "" ){
+        alert("Silakan isi task.");
+        return;
+    } else if (dueDate === "" ){
+        alert("Silakan isi tanggal.");
+        return;
     }
 
     todos.push({
